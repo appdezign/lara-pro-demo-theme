@@ -1,5 +1,5 @@
 
-# Demo Theme Lara CMS 8
+# Demo Theme Lara Pro CMS 10
 
 ## Built on Laravel, the best framework in the world
 
