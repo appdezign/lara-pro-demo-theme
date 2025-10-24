@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="lara-{{ $entity->getResourceSlug() }} test-sh lara-{{ $activeroute->getMethod() }} lara-{{ $data->params->getVType() }}">
+<body class="lara-{{ $entity->getResourceSlug() }} lara-{{ $activeroute->getMethod() }} lara-{{ $data->params->getVType() }}">
 
 @if(isset($firstpageload) && $firstpageload)
 	<!-- Page loading spinner -->
@@ -27,6 +27,7 @@
 
 <main class="page-wrapper">
 
+	@include('_partials.header.preview_bar')
 	@include('_partials.header.'.$data->layout->header)
 
 	@includeWhen($data->layout->hero, '_partials.hero.'.$data->layout->hero)
