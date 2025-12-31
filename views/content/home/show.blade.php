@@ -12,7 +12,7 @@
 			<div class="row gy-4 py-xl-16">
 				@if($data->object->hasFeatured())
 					<div class="col-md-6">
-						@include('_img.lazy', ['lzobj' => $data->object->getFeatured(), 'lzw' => 1280, 'lzh' => 960, 'ar' => '4x3', 'cl' => 'rounded-3 shadow-sm'])
+						@include('_img.glide', ['media' => $data->object->featured(), 'width' => 1280, 'height' => 960, 'class' => 'rounded-3 shadow-sm'])
 					</div>
 					<div class="col-lg-5 col-md-6 offset-lg-1 d-flex">
 						<div class="align-self-center ps-lg-0 ps-md-24">
