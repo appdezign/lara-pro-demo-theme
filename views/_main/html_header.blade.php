@@ -24,10 +24,7 @@
 <meta name="msapplication-config" content="{{ Theme::url('favicon/browserconfig.xml') }}">
 <meta name="theme-color" content="#ffffff">
 
+@googlefonts('manrope')
+
 {{ Vite::useBuildDirectory('assets/themes/' . config('theme.active')) }}
-@vite(['laracms/themes/' . config('theme.active') . '/_assets/scss/app.scss'])
-
-
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
+@vite(['laracms/themes/' . config('theme.active') . '/_assets/css/app.css'])
