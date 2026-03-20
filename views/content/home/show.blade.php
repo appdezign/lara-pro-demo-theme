@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('head-after')
-	<link media="all" type="text/css" rel="stylesheet" href="https://demo.laracms.nl/assets/themes/demo/vendor/img-comparison-slider/img-comparison-slider.css">
+	{!! Theme::css('vendor/img-comparison-slider/img-comparison-slider.css') !!}
 @endsection
 
 @section('content')
@@ -55,5 +55,5 @@
 
 @section('scripts-after')
 	@parent
-	<script src="https://demo.laracms.nl/assets/themes/demo/vendor/img-comparison-slider/img-comparison-slider.js"></script>
+	{!! Theme::js('vendor/img-comparison-slider/img-comparison-slider.js') !!}
 @endsection
