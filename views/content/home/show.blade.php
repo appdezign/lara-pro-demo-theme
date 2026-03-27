@@ -24,7 +24,7 @@
 
 	<section class="py-12">
 		<div class="container">
-			@widget('entityWidget', ['resource_slug' => 'services', 'parent' => 'home', 'term' => '', 'needs_image' => true, 'count' => 3, 'grid' => $data->grid])
+			@widget('entityCacheWidget', ['resource_slug' => 'services', 'parent' => 'home', 'term' => '', 'needs_image' => true, 'count' => 3, 'grid' => $data->grid])
 		</div>
 	</section>
 
@@ -34,20 +34,20 @@
 
 	<section class="py-12">
 		<div class="container">
-			@widget('entityWidget', ['resource_slug' => 'testimonials', 'parent' => 'home', 'term' => 'home',
+			@widget('entityCacheWidget', ['resource_slug' => 'testimonials', 'parent' => 'home', 'term' => 'home',
 			'needs_image' => true, 'count' => 3, 'grid' => $data->grid])
 		</div>
 	</section>
 
 	<section class="py-12">
 		<div class="container">
-			@widget('entityWidget', ['resource_slug' => 'portfolios', 'parent' => 'home', 'term' => '', 'needs_image' => true, 'count' => 20, 'grid' => $data->grid])
+			@widget('entityCacheWidget', ['resource_slug' => 'portfolios', 'parent' => 'home', 'term' => '', 'needs_image' => true, 'count' => 20, 'grid' => $data->grid])
 		</div>
 	</section>
 
 	<section class="bg-secondary py-12">
 		<div class="container">
-			@widget('entityWidget', ['resource_slug' => 'blogs', 'parent' => 'home', 'term' => 'home-blog-widget', 'needs_image' => true, 'count' => 4, 'grid' => $data->grid])
+			@widget('entityCacheWidget', ['resource_slug' => 'blogs', 'parent' => 'home', 'term' => 'home-blog-widget', 'needs_image' => true, 'count' => 4, 'grid' => $data->grid])
 		</div>
 	</section>
 
